@@ -7,7 +7,7 @@ namespace RefreshRateOptimizer
 {
     public partial class MainForm : Form
     {
-        // Import Win32 API functions
+       
         [DllImport("user32.dll")]
         public static extern bool EnumDisplaySettings(string deviceName, int modeNum, ref DEVMODE devMode);
 
@@ -54,7 +54,7 @@ namespace RefreshRateOptimizer
 
         public MainForm()
         {
-            // UI Setup
+           
             this.Text = "Hz Changer";
             this.Size = new Size(320, 250);
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -63,11 +63,11 @@ namespace RefreshRateOptimizer
 
             lblStatus = new Label() { Text = "Status: Ready", Top = 20, Left = 20, Width = 260, TextAlign = ContentAlignment.MiddleCenter };
 
-            // Button to set Maximum Refresh Rate
+           
             btnMaxHz = new Button() { Text = "Set Max Refresh Rate", Top = 60, Left = 50, Width = 200, Height = 45, BackColor = Color.LightGreen };
             btnMaxHz.Click += SetMaxHz_Click;
 
-            // Button to reset to 60Hz
+           
             btnReset60 = new Button() { Text = "Reset to 60Hz", Top = 120, Left = 50, Width = 200, Height = 45, BackColor = Color.LightSalmon };
             btnReset60.Click += Reset60Hz_Click;
 
@@ -78,12 +78,12 @@ namespace RefreshRateOptimizer
 
         private void SetMaxHz_Click(object sender, EventArgs e)
         {
-            ApplyRefreshRate(true); // True means find maximum
+            ApplyRefreshRate(true); 
         }
 
         private void Reset60Hz_Click(object sender, EventArgs e)
         {
-            ApplyRefreshRate(false); // False means set to 60
+            ApplyRefreshRate(false); 
         }
 
         private void ApplyRefreshRate(bool findMax)
