@@ -6,6 +6,16 @@ A lightweight, high-performance Windows utility built in **C#** that allows user
 ![C#](https://img.shields.io/badge/Language-C%23-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 ![Win32 API](https://img.shields.io/badge/API-Win32-red)
+## 🚀 How to Use
+
+To see **HZ-Changer** in action, watch the quick demo below:
+<details>
+  
+
+https://github.com/user-attachments/assets/0cf9a908-a8a6-4534-975c-bc7efd9d5e7b
+
+
+</details>
 
 ## 🚀 Overview
 
